@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="iboxdio" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/sysgpio" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/sysdio" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Release-arm">
+				<Option output="../../../drivers/sysgpio" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj/Release-arm/" />
+				<Option type="3" />
+				<Option compiler="gnu_arm_gcc_compiler_ibox" />
+				<Option projectCompilerOptionsRelation="0" />
+				<Option projectLinkerOptionsRelation="0" />
+				<Option projectIncludeDirsRelation="0" />
+				<Option projectResourceIncludeDirsRelation="0" />
+				<Option projectLibDirsRelation="0" />
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release-ibox">
+				<Option output="../../../drivers/ibox/iboxgpio" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj/Release-ibox/" />
+				<Option type="3" />
+				<Option compiler="gnu_arm_gcc_compiler_ibox" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-fPIC -shared" />
+					<Add directory="../../../../../../../../../opt/fy/3rd/lib/yc335x-Lib" />
+					<Add directory="../../../../../../../../../opt/fy/3rd/lib/tslib" />
+					<Add directory="../../../../../../../../../opt/fy/3rd/lib/qt4.8.5" />
+					<Add directory="../../../../fy_core/core_fy1/core/src/imdm/include" />
+					<Add directory="../../../../fy_core/core_fy1/core/src/imutil/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="../../../../../../../../../opt/fy/3rd/lib/yc335x-Lib/libycapi.so" />
+					<Add library="../../../../../../../../../opt/fy/3rd/lib/qt4.8.5/lib/libQtCore.so" />
+					<Add library="../../../../../../../../../opt/fy/3rd/lib/qt4.8.5/lib/libQtGui.so" />
+					<Add library="../../../../../../../../../opt/fy/3rd/lib/qt4.8.5/lib/libQtNetwork.so" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="im_dm_devices_iboxdio.cpp" />
+		<Unit filename="im_dm_devices_iboxdio.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

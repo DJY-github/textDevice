@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="src/mod_drivers/snmp/snmp.cbp" />
+		<Project filename="src/mod_drivers/snmpos/snmpos.cbp" />
+		<Project filename="src/mod_drivers/modbus_dly/modbus_dly.cbp" />
+		<Project filename="src/mod_drivers/modbus_xiaomuxian/modbus_xiaomuxian.cbp" />
+		<Project filename="src/mod_drivers/modbus/modbus.cbp" />
+		<Project filename="src/mod_drivers/virtual_device/virtual_device.cbp" />
+		<Project filename="src/mod_drivers/opc_agent_client/opc_agent_client.cbp" />
+		<Project filename="src/mod_drivers/sysdio/sysdio.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
