@@ -5,26 +5,27 @@
 
 enum PacketType
 {
-	kRtu,
-	kTcp
+	kRtu,     //RTU  十六进制
+	kTcp      //TCP
 };
 
 enum ByteOrder
 {
     kBigEndian                  = 0,   // 大端模式， 高位在前 ABCD
-    kLittleEndian               = 1,   // 小端模式，低位在前 DCBA
-    kBigEndianWordInverted      = 2,   // 大端模式，但字反序 BADC
-    kLittleEndianWordInverted   = 3    // 小端模式，但字反序 CDAB
+    kLittleEndian               = 1,   // 小端模式， 低位在前 DCBA
+    kBigEndianWordInverted      = 2,   // 大端模式， 但字反序 BADC
+    kLittleEndianWordInverted   = 3    // 小端模式， 但字反序 CDAB
 };
 
+//modbus包发送
 class ModbusPacketSend
 {
 public:
-	void		buildPacket(PacketType type, int device_addr, int function , int data_addr, int data_count);
-	const char* sendData()const;
-	const int   sendByte() const;
+	void		  buildPacket(PacketType type, int device_addr, int function , int data_addr, int data_count);
+	const char*  sendData()const;
+	const int    sendByte() const;
 
-	void        setTransId(unsigned short trans_id);
+	void         setTransId(unsigned short trans_id);
 
 private:
 	friend class ModbusPacketRecv;
