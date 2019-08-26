@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ct_ip2000" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/sysgpio" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../../../drivers/ct_ip2000" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2 -fPIC" />
+					<Add directory="../../../../fy_core/core_fy1/core/src/imdm" />
+					<Add directory="../../../../fy_core/core_fy1/core/src/imutil" />
+					<Add directory="../../../../fy_core/core_fy1/core/src/imdm/include" />
+					<Add directory="../../../../fy_core/core_fy1/core/src/imutil/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Release-arm">
+				<Option output="../../../drivers/ct_ip2000" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj/Release-arm/" />
+				<Option type="3" />
+				<Option compiler="copy_of_gnu_gcc_compiler_myir" />
+				<Compiler>
+					<Add option="-fPIC -shared" />
+					<Add directory="../../../../fy_core/core_fy1/core/src/imdm/include" />
+					<Add directory="../../../../fy_core/core_fy1/core/src/imutil/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release-ibox">
+				<Option output="../../../drivers/ibox/ups_santak" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj/Release-arm/" />
+				<Option type="3" />
+				<Option compiler="copy_of_gnu_gcc_compiler_myir" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-fPIC -shared" />
+					<Add directory="../../../../fy_core/core_fy1/core/src/imdm" />
+					<Add directory="../../../../fy_core/core_fy1/core/src/imutil" />
+					<Add directory="../../../../fy_core/core_fy1/core/src/imdm/include" />
+					<Add directory="../../../../fy_core/core_fy1/core/src/imutil/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="im_dm_devices_ct_ip2000.cpp" />
+		<Unit filename="im_dm_devices_ct_ip2000.h" />
+		<Unit filename="serial_port.cpp" />
+		<Unit filename="serial_port.h" />
+		<Unit filename="serial_socket_udp.cpp" />
+		<Unit filename="serial_socket_udp.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

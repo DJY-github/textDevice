@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="modbus_qk" />
+		<Option pch_mode="2" />
+		<Option compiler="icc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/modbus" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="icc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/Zi" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../../../drivers/modbus" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-fPIC" />
+					<Add directory="../../imutil/include" />
+					<Add directory="../../imdm/include" />
+				</Compiler>
+			</Target>
+			<Target title="Release-arm">
+				<Option output="../../../drivers/modbus" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj/Release-arm/" />
+				<Option type="3" />
+				<Option compiler="copy_of_gnu_gcc_compiler_myir" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-fPIC" />
+					<Add directory="../../imutil/include" />
+					<Add directory="../../imdm/include" />
+				</Compiler>
+			</Target>
+			<Target title="Release-ibox">
+				<Option output="../../../drivers/ibox/modbus_qk" prefix_auto="0" extension_auto="1" />
+				<Option working_dir="../modbus_qk" />
+				<Option object_output="obj/Release-ibox/" />
+				<Option type="3" />
+				<Option compiler="gnu_arm_gcc_compiler_ibox" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-fPIC" />
+					<Add directory="../../imutil/include" />
+					<Add directory="../../imdm/include" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="im_dm_devices_modbus.cpp" />
+		<Unit filename="im_dm_devices_modbus.h" />
+		<Unit filename="modbus_packet.cpp" />
+		<Unit filename="modbus_packet.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
