@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//modbus
 enum PacketType
 {
 	kRtu,     //RTU  十六进制
@@ -21,6 +22,7 @@ enum ByteOrder
 class ModbusPacketSend
 {
 public:
+    //tupe
 	void		  buildPacket(PacketType type, int device_addr, int function , int data_addr, int data_count);
 	const char*  sendData()const;
 	const int    sendByte() const;

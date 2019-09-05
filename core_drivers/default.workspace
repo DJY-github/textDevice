@@ -9,5 +9,22 @@
 		<Project filename="src/mod_drivers/virtual_device/virtual_device.cbp" />
 		<Project filename="src/mod_drivers/opc_agent_client/opc_agent_client.cbp" />
 		<Project filename="src/mod_drivers/sysdio/sysdio.cbp" />
+		<Project filename="src/mod_drivers/ping/ping.cbp" />
+		<Project filename="src/mod_drivers/ups_santak/ups_santak.cbp" />
+		<Project filename="src/mod_drivers/snmpUPS/snmpUPS.cbp" />
+		<Project filename="src/mod_drivers/snmphw/snmphw.cbp" />
+		<Project filename="src/mod_drivers/opc_ba/opc_ba.cbp" />
+		<Project filename="src/mod_drivers/modbus_qk/modbus_qk.cbp" />
+		<Project filename="src/mod_drivers/modbus_microtp400/modbus_microtp400.cbp" />
+		<Project filename="src/mod_drivers/modbus_dyxn/modbus_dyxn.cbp" />
+		<Project filename="src/mod_drivers/modbus_battery/modbus.cbp" />
+		<Project filename="src/mod_drivers/logicdev/logicdev.cbp" />
+		<Project filename="src/mod_drivers/iboxdio/iboxdio.cbp" />
+		<Project filename="src/mod_drivers/dz_es2000/dz_es2000.cbp" />
+		<Project filename="src/mod_drivers/dianzong/dianzong.cbp" />
+		<Project filename="src/mod_drivers/dac_zchw/dac_zchw.cbp" />
+		<Project filename="src/mod_drivers/ct_ip2000/ct_ip2000.cbp" />
+		<Project filename="src/mod_drivers/builtin_leakage/builtin_leakage.cbp" />
+		<Project filename="src/mod_drivers/battery_ctrl/battery_ctrl/battery_ctrl.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>

@@ -35,6 +35,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="snmphw.cpp" />
+		<Unit filename="snmphw.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
